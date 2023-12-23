@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 1px solid red;
+            width: 100%;
+            height: 750px;
+            position: relative;
+            display: grid;
+            align-items: center;
+            margin: auto;
+            overflow: hidden;
+         
+        }
+        
+        .slide{
+            
+            width: 100%;
+            height: 130px;
+            display: flex;
+            animation: scroll 40s linear infinite ; 
+            border: 1px solid black;
+        }
+        .slide div{
+            width: 250px;
+            height: 100%;
+            padding-left: 15px;
+            perspective: 100px;
+            border: 1px solid red;
+        }
+        .slide div img{
+            width: 100%;
+            height: 100%;
+            transition: transform 1s;
+        }
+        .slide div img:hover{
+            transform: translateZ(20px);
+        }
+        @keyframes scroll {
+            0%{
+                transform: translateX(0);
+            }
+            100%{
+                transform: translateX(calc(-250px * 9));
+            }
+        }
+        .logo{
+            width: 100%;
+            height: 100%;
+        }
+       
+    </style>
+</head>
+<body>
+    <section class="container">
+        
+        
+        <div class="slide">
+            <div>
+                <img src="Tinker images/portfolio_big_item_01.jpg" alt="">
+            </div>
+            <div>
+                <img src="Tinker images/portfolio_big_item_02.jpg" alt="">
+            </div>
+            <div>
+                <img src="Tinker images/portfolio_item_03.jpg" alt="">
+            </div>
+            <div>
+                <img src="Tinker images/portfolio_item_04.jpg" alt="">
+            </div>
+            <div>
+                <img src="Tinker images/portfolio_item_05.jpg" alt="">
+            </div>
+            <div>
+                <img src="Tinker images/portfolio_item_06.jpg" alt="">
+            </div>
+            <div>
+                <img src="Tinker images/portfolio_big_item_01.jpg" alt="">
+            </div>
+            <div>
+                <img src="Tinker images/portfolio_big_item_02.jpg" alt="">
+            </div>
+            <div>
+                <img src="Tinker images/portfolio_item_03.jpg" alt="">
+            </div>
+            <div>
+                <img src="Tinker images/portfolio_item_04.jpg" alt="">
+            </div>
+            <div>
+                <img src="Tinker images/portfolio_item_05.jpg" alt="">
+            </div>
+            <div>
+                <img src="Tinker images/portfolio_item_06.jpg" alt="">
+            </div>
+            <div>
+                <img src="Tinker images/portfolio_big_item_01.jpg" alt="">
+            </div>
+            <div>
+                <img src="Tinker images/portfolio_big_item_02.jpg" alt="">
+            </div>
+            <div>
+                <img src="Tinker images/portfolio_item_03.jpg" alt="">
+            </div>
+            <div>
+                <img src="Tinker images/portfolio_item_04.jpg" alt="">
+            </div>
+            <div>
+                <img src="Tinker images/portfolio_item_05.jpg" alt="">
+            </div>
+            <div>
+                <img src="Tinker images/portfolio_item_06.jpg" alt="">
+            </div>
+            
+        </div>
+
+    </section>
+</body>
+</html>

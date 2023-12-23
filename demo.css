@@ -1,0 +1,24 @@
+body{
+    background-color: blue !important;
+}
+
+.div2{
+  display: block !important;
+}
+.logo{
+    display: block !important;
+}
+.Home{
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin: auto !important;
+}
+
+.div2 ul{
+
+}
+
+.logo h1{
+    font-size: 32px !important;
+}

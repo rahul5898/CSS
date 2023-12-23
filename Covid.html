@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corona virus</title>
+    <link rel="shortcut icons" href="covidimage/corona_icon.png">
+    <link rel="stylesheet" media=" screen and (max-width:1200px)" href="covid.css">
+    <style>
+        #Home {
+            width: 100%;
+            height: 800px;
+            position: relative;
+            border: 1px solid red;
+        }
+
+        .banner {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            display: flex;
+
+        }
+
+        .banner img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .header {
+            width: 100%;
+            height: 80px;
+            border: 1px solid purple;
+            position: absolute;
+
+        }
+
+        .header1 {
+            width: 90%;
+            height: 100%;
+
+            background-color: #ed242e;
+            position: absolute;
+            left: 5%;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            margin: auto;
+        }
+
+        .nav1 ul,
+        .nav2 ul {
+            display: flex;
+            margin-left: 70px;
+            position: relative;
+
+        }
+
+
+        .nav1 ul li a,
+        .nav2 ul li a {
+            text-decoration: none;
+            margin-left: 70px;
+            text-transform: uppercase;
+            font-size: 17px;
+            font-family: sans-serif;
+            color: white;
+
+        }
+
+        .nav1 ul li a:hover,
+        .nav2 ul li a:hover {
+            color: black;
+
+        }
+
+        .nav1 ul li,
+        .nav2 ul li {
+            list-style: none;
+        }
+
+        .circle {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            color: white;
+            top: 1%;
+            left: 43%;
+            text-align: center;
+            border-radius: 50%;
+            background-color: #ed242e;
+        }
+
+        .circle img {
+            width: 100%;
+            height: 50%;
+            position: absolute;
+            bottom: 0%;
+            left: 0%;
+        }
+
+        .heading {
+            width: 550px;
+            height: 340px;
+            position: absolute;
+            top: 25%;
+            left: 10%;
+        }
+
+        .heading h1 {
+            font-size: 90px;
+            color: white;
+            margin: 0;
+            font-family: sans-serif;
+
+            /* font-weight: bolder; */
+        }
+
+        .heading button:nth-child(2) {
+            width: 200px;
+            height: 50px;
+            font-size: 16px;
+            position: absolute;
+            bottom: 0;
+            text-transform: uppercase;
+            border: none;
+        }
+
+        .heading button:nth-child(3) {
+            width: 200px;
+            height: 50px;
+            font-size: 16px;
+            position: absolute;
+            bottom: 0;
+            left: 40%;
+            text-transform: uppercase;
+            border: none;
+        }
+
+        .heading button:hover {
+            color: white;
+            background-color: #ed242e;
+            transition: all ease-in-out 1s;
+        }
+
+        .left {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background-color: #ed242e;
+            position: absolute;
+            top: 35%;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            font-weight: bolder;
+            color: white;
+        }
+
+        .right {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background-color: #ed242e;
+            position: absolute;
+            top: 35%;
+            right: 0;
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            font-weight: bolder;
+
+        }
+
+        #About {
+            width: 100%;
+            height: 700px;
+            position: relative;
+        }
+
+        .about {
+            width: 90%;
+            height: 90%;
+
+            position: absolute;
+            left: 5%;
+            top: -20%;
+            border-radius: 40px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+        }
+        .title{
+            width: 50%;
+            height: 300px;
+            border: 1px solid red;
+            display: flex;
+            flex-direction: column;
+        }
+        .title h1{
+            
+        }
+    </style>
+</head>
+
+<body>
+    <section id="Home">
+        <div class="banner">
+            <img src="covidimage/banner.png" alt="">
+            <div class="header">
+                <div class="header1">
+                    <nav class="nav1">
+                        <ul>
+                            <li><a href="#Home">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">TakeAction</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="nav2">
+                        <ul>
+                            <li><a href="">News</a></li>
+                            <li><a href="">Doctores</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="circle">
+                <h1 style="font-size: 17px; margin-top: 22px;">COVIDO</h1>
+                <img src="covidimage/logo.png" alt="">
+            </div>
+            <div class="heading">
+                <h1>Care early <br> Coronavirus</h1>
+                <button>Read More</button>
+                <button>About Us</button>
+            </div>
+            <div class="left">
+                < </div>
+                    <div class="right">
+                        >
+                    </div>
+            </div>
+
+    </section>
+    <section id="About">
+        <div class="about">
+            <div class="title">
+                <h1>ABOUT CORONA VIRUS</h1>
+                <hr>
+                <p>English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default
+                    model text, and a search for</p>
+                
+            </div>
+            <div class="image">
+                <img src="covidimage/about.png" alt="">
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

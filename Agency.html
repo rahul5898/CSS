@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Open sans", sans-serif;
+        }
+
+        #Home {
+
+            width: 100%;
+            height: 790px;
+            position: relative;
+        }
+
+        .line {
+            width: 100%;
+            background-color: white;
+            opacity: 0.4;
+            height: 6px;
+            animation-name: line;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            position: absolute;
+
+        }
+
+        @keyframes line {
+            from {
+                width: 1%;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+        .header {
+
+            width: 99.9%;
+            height: 100px;
+            position: absolute;
+            display: flex;
+        }
+
+        .left {
+            width: 30%;
+            height: 100%;
+
+        }
+
+        .bar {
+            width: 70%;
+            height: 100%;
+
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+
+        }
+
+        .image {
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+
+            background: url(Bimg/bg-3.jpg);
+            background-size: cover;
+            background-position: left top;
+
+        }
+
+        .image img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .middle {
+            width: 70%;
+            height: 250px;
+            position: absolute;
+            top: 40%;
+            left: 15%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* justify-content: center; */
+
+        }
+
+        .middle span {
+            font-size: 70px;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .middle p {
+            color: white;
+            margin-bottom: 25px;
+        }
+
+        .middle button {
+            width: 120px;
+            height: 40px;
+            border-radius: 25px;
+            background-color: white;
+            letter-spacing: 2px;
+            font-size: 13px;
+            border: none;
+
+        }
+
+        .middle button:hover {
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+            transition: transform 1s;
+        }
+
+        .left h1 {
+
+            position: absolute;
+            font-size: 35px;
+            left: 15%;
+            margin: 0;
+            top: 20%;
+            font-weight: normal;
+            color: white;
+        }
+
+        .bar ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 35px;
+
+            width: 70%;
+            height: 50px;
+
+        }
+
+        .bar ul li {
+            margin-left: 30px;
+        }
+
+        .bar ul li a {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 12px;
+            color: white;
+            font-weight: bolder;
+        }
+
+        #About {
+            width: 100%;
+            height: 100vh;
+            /* border: 2px solid blue; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .About1 {
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: 30vh;
+            /* border: 2px solid black; */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .About1 h1 {
+            font-size: 40px;
+            text-align: center;
+            color: #505050;
+            font-weight: 300;
+        }
+
+        .About1 p:nth-child(2) {
+            text-align: center;
+            line-height: 25px;
+            margin-top: 7px;
+            color: #444444;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        .About1 span {
+            color: #03a9f4;
+        }
+
+        .About2 {
+            width: 80%;
+            height: 30vh;
+            /* border: 2px solid black; */
+            display: flex;
+            flex-direction: row;
+        }
+
+        .design {
+            display: flex;
+            width: 50%;
+            height: 30vh;
+            /* border: 2px solid; */
+        }
+
+        .support {
+            display: flex;
+            width: 50%;
+            height: 30vh;
+            /* border: 2px solid; */
+        }
+
+        .responsive {
+            display: flex;
+            width: 50%;
+            height: 30vh;
+            /* border: 2px solid; */
+        }
+
+        .team {
+            display: flex;
+            width: 50%;
+            height: 30vh;
+            /* border: 2px solid; */
+        }
+
+        .About3 {
+            display: flex;
+            width: 80%;
+            height: 30vh;
+            /* border: 2px solid rgb(255, 65, 65); */
+        }
+
+        .icon {
+            width: 10%;
+            height: 30vh;
+            border: 1px solid green;
+        }
+
+        .message {
+            width: 90%;
+            height: 30vh;
+            /* border: 2px solid rgb(240, 117, 117); */
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .message h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #444444;
+            letter-spacing: 1px;
+            margin-bottom: 0;
+            margin-left: 23px;
+        }
+
+        .message p {
+            font-size: 13px;
+            color: #444444;
+            letter-spacing: 1px;
+            font-weight: 300;
+            line-height: 24px;
+            margin-left: 23px;
+        }
+
+        .m3,
+        .m4 {
+            justify-content: start;
+        }
+
+        #section3 {
+            display: flex;
+            width: 100%;
+            height: 48vh;
+            /* border: 2px solid orangered; */
+            justify-content: center;
+            flex-direction: row;
+            column-gap: 30px;
+            align-items: center;
+            background: url(Bimg/bg-2.jpg);
+            background-size: cover;
+        }
+
+        .data {
+            width: 18%;
+            height: 21vh;
+
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        .data h2 {
+            font-size: 45px;
+            color: #03a9f4;
+            margin: 0;
+            font-weight: 100;
+        }
+
+        .data h5 {
+            margin-top: 0;
+            font-weight: 200;
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+
+        .data h6 {
+            margin: 0;
+            color: #03a9f4;
+        }
+
+        #team {
+            padding-top: 50px;
+            width: 100%;
+            height: 100vh;
+            background-color: #e6e6e6;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .Members {
+            width: 100%;
+            display: flex;
+            height: 60vh;
+            column-gap: 30px;
+            align-items: center;
+            justify-content: center;
+            margin-top: -80px;
+        }
+
+        .head {
+            width: 45%;
+            height: 30vh;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .head p {
+            color: #444444;
+            letter-spacing: 1px;
+            text-align: center;
+            line-height: 25px;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+
+        .head h1 {
+            margin: auto;
+            font-weight: 300;
+            margin: 0px;
+            font-size: 40px;
+            color: gray;
+            letter-spacing: 1px;
+            margin-top: -100px;
+        }
+
+        .head h6 {
+            margin-top: 0;
+        }
+
+        .member1 {
+            width: 25%;
+            height: 50vh;
+            /* border: 3px solid rebeccapurple; */
+            background-image: url(Bimg/team-1.jpg);
+            background-size: cover;
+            justify-content: end;
+            align-items: end;
+            display: flex;
+        }
+
+        .member2 {
+            width: 25%;
+            height: 50vh;
+            /* border: 3px solid rebeccapurple; */
+            background-image: url(Bimg/team-2.jpg);
+            background-size: cover;
+            justify-content: end;
+            align-items: end;
+            display: flex;
+        }
+
+        .member3 {
+            width: 25%;
+            height: 50vh;
+            /* border: 3px solid rebeccapurple; */
+            background-image: url(Bimg/team-3.jpg);
+            background-size: cover;
+            display: flex;
+            justify-content: end;
+            align-items: end;
+        }
+
+        .mem-sub {
+            width: 100%;
+            height: 40px;
+            /* border: 1px solid; */
+            background-color: white;
+            opacity: 0.8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .mem-sub img {
+            margin-left: 15px;
+            height: 50%;
+        }
+
+        .role,.name {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .role div {
+            display: flex;
+            mar
+        }
+    </style>
+</head>
+
+<body>
+    <section id="Home">
+        <div class="image">
+            <!-- <img src="Bimg/bg-3.jpg" alt=""> -->
+        </div>
+        <div class="header">
+            <div class="line">
+
+            </div>
+            <div class="left">
+                <h1>BONATIVO</h1>
+            </div>
+            <div class="bar">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Work">Work</a></li>
+                    <li><a href="#Blog">Blog</a></li>
+                    <li><a href="#Blog Post">Blog Post</a></li>
+                    <li><a href="#Pages">Pages</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="middle">
+            <span>MODERN <b>AGENCY</b></span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, corrupti.</p>
+            <button>SEE MORE</button>
+        </div>
+    </section>
+    <section id="About">
+        <div class="About1">
+            <h1>MODERN DIGITAL AGENCY</h1>
+            <p>We Are A Creative Agency Located In <span> Sydney, Australia.</span> It Is A Long Established Fact That A
+                Reader Will Be Distracted By The Readable Content.</p>
+        </div>
+        <div class="About2">
+            <div class="design">
+                <div class="icon"></div>
+                <div class="message m1">
+                    <h3>CREATIVE DESIGNS</h3>
+                    <p>Vivamus congue diam vitae tortor imperdiet congue. Nullam sagittis, tristique diam, ut
+                        ullamcorper tellus. Cras porttitor massa.</p>
+                </div>
+            </div>
+            <div class="support">
+                <div class="icon"></div>
+                <div class="message m2">
+                    <h3>GREAT SUPPORT</h3>
+                    <p>Vivamus congue diam vitae tortor imperdiet congue. Nullam sagittis, tristique diam, ut
+                        ullamcorper tellus. Cras porttitor massa.</p>
+                </div>
+            </div>
+        </div>
+        <div class="About3">
+            <div class="responsive">
+                <div class="icon"></div>
+                <div class="message m3">
+                    <h3>FULLY RESPONSIVE</h3>
+                    <p>Vivamus congue diam vitae tortor imperdiet congue. Nullam sagittis, tristique diam, ut
+                        ullamcorper tellus. Cras porttitor massa.</p>
+                </div>
+            </div>
+            <div class="team">
+                <div class="icon"></div>
+                <div class="message m4">
+                    <h3>DEDICATED TEAM</h3>
+                    <p>Vivamus congue diam vitae tortor imperdiet congue. Nullam sagittis, tristique diam, ut
+                        ullamcorper tellus. Cras porttitor massa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section3">
+        <div class="data">
+            <h2>654</h2>
+            <h5>Happy Clients</h5>
+            <h6>___</h6>
+        </div>
+        <div class="data">
+            <h2>832</h2>
+            <h5>Project finish</h5>
+            <h6>___</h6>
+        </div>
+        <div class="data">
+            <h2>800</h2>
+            <h5>Pizza ordered</h5>
+            <h6>___</h6>
+        </div>
+        <div class="data">
+            <h2>750</h2>
+            <h5>Cups of coffee</h5>
+            <h6>___</h6>
+        </div>
+    </section>
+    <section id="team">
+        <div class="head">
+            <h1>BONATIVO TEAM</h1>
+            <h6 style="color: #03a9f4; margin-top: 10px;"><b>_______</b></h6>
+            <p>Vivamus Congue Diam Vitae Tortor Imperdiet Congue. Nullam Sagittis, Tristique Diam, Ut Ullamcorper
+                Tellus. Cras Porttitor Massa.</p>
+        </div>
+        <div class="Members">
+            <div class="member1">
+                <div class="mem-sub">
+                    <img src="Bimg/twitter.png" alt="">
+                    <img src="Bimg/facebook.png" alt="">
+                    <img src="Bimg/dribbble.png" alt="">
+                </div>
+            </div>
+            <div class="member2">
+
+                <div class="mem-sub">
+                    <img src="Bimg/twitter.png" alt="">
+                    <img src="Bimg/facebook.png" alt="">
+                    <img src="Bimg/dribbble.png" alt="">
+                </div>
+            </div>
+            <div class="member3">
+
+                <div class="mem-sub">
+                    <img src="Bimg/twitter.png" alt="">
+                    <img src="Bimg/facebook.png" alt="">
+                    <img src="Bimg/dribbble.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="name">
+            <div>
+                <h1>DANIEL SMITH</h1>
+            </div>
+            <div>
+                <h1>DANIEL SMITH</h1>
+            </div>
+            <div>
+                <h1>DANIEL SMITH</h1>
+            </div>
+        </div>
+        <div class="role">
+            <div>
+                <span>Manager</span>
+            </div>
+            <div>
+                <span>Manager</span>
+            </div>
+            <div>
+                <span>Manager</span>
+            </div>
+        </div>
+    </section>

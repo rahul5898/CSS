@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media=" screen and (max-width:1250px)" href="format.css">
+    <title>WorldCup 2023</title>
+    <style>
+        .container{
+            width: 100%;
+            height: 800px;
+            position: relative;
+           display: flex;
+           margin: auto;
+            overflow: hidden;
+        }
+        .captains{
+            width: 100%;
+            height: 100%;
+            display: grid;
+            align-items: center;
+           
+        }
+        .captains img{
+            width: 100%;
+            height: 100%;
+        }
+        .header{
+            display: flex !important;
+            width: 100%;
+            height: 100px;
+            position: fixed;
+            background-color: black;
+            opacity: 0.6;
+            top: 2%;
+           
+        }
+        .left{
+            position: absolute;
+            display: flex;
+            width: 30%;
+            height: 100%;
+            top: 0;
+            /* border: 1px solid red; */
+        }
+       
+        .left img{
+            width: 150px;
+            height: 100px;
+        }
+        .left h2{
+            position: absolute;
+          
+            top: 10%;
+            font-size: 17px;
+            left: 45%;
+            margin: 0;
+            color: skyblue;
+            font-family: 'Courier New', Courier, monospace;
+            font-style: italic;
+            
+
+        }
+        .left h1:nth-child(3){
+           
+            position: absolute;
+            left: 30%;
+            top: 15%;
+            font-size: 20px;
+            color: skyblue;
+            font-family: 'Courier New', Courier, monospace;
+            font-style: italic;
+        }
+        .left h1:nth-child(4){
+            position: absolute;
+            top: 35%;
+            left: 40%;
+            color: skyblue;
+            font-family: 'Courier New', Courier, monospace;
+            font-style: italic;
+            font-size: 23px;
+            
+
+        }
+        .div2{
+            display: flex !important;
+            width: 70%;
+            height: 100%;
+            position: absolute;
+            
+            left: 30%;
+        }
+        .div2 ul{
+                list-style: none;
+               
+                display: flex;
+                justify-content: center;
+                position: absolute;
+                width: 60%;
+                top: 30%;
+                left: 20%;
+                
+            }
+            
+            .div2 ul li a{
+                text-decoration: none;
+                margin-left: 50px;
+                color: white;
+                font-style: italic;
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: 600;
+                text-transform: uppercase;  
+                font-size: 15px;
+                font-family: sans-serif;
+                
+              
+            }
+            .slide{
+            
+            width: calc(250px*18);
+            height: 130px;
+            display: flex;
+            position: absolute;
+            top: 70%;
+            animation: scroll 40s linear infinite ; 
+           
+         
+            }
+            .slide div{
+                width: 220px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                padding-left: 15px;
+                perspective: 100px;
+  
+            }
+            .slide div img{
+                width: 100% ;
+                height: 100% ;
+                transition: transform 1s;
+                
+            }
+            .slide div img:hover{
+                transform: translateZ(10px);
+            }
+            @keyframes scroll {
+                0%{
+                    transform: translateX(0);
+                }
+                100%{
+                    transform: translateX(calc(-250px * 9));
+                }
+            }
+            .second-section{
+                border: 1px solid red;
+                height: 700px;
+                width: 100%;
+                
+            }
+       
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="captains">
+            <img src="captains.webp" alt="">           
+        </div>
+        <div class="header">
+            <div class="left">
+                <img src="—Pngtree—icc cricket world cup trophy_8838028.png" alt="">
+                
+                <h2>ICC MEN'S</h2>
+                <h1>CRICKET WORLD CUP</h1>
+                <h1>INDIA 2023</h1>
+            </div>
+            <nav class="div2">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Schedule</a></li>
+                    <li><a href="#">Points Table </a></li>
+                    <li><a href="#">Photos</a></li>
+                    <li><a href="#">Videos</a></li>    
+                </ul> 
+            </nav>
+        </div>
+        <div class="slide">
+            <div>
+                <img src="team flag/bangladesh flag.png" alt="">
+            </div>
+            <div>
+                <img src="team flag/srilanka flag.png" alt="">
+            </div>
+            <div>
+                <img src="team flag/pakistan flag.webp" alt="">
+            </div>
+            <div>
+                <img src="team flag/england flag.jpg" alt="">
+            </div>
+            <div>
+                <img src="team flag/indian flag.jpg" alt="">
+            </div>
+            <div>
+                <img src="team flag/australian flag.webp" alt="">
+            </div>
+            <div>
+                <img src="team flag/southafrica flag.webp" alt="">
+            </div>
+            <div>
+                <img src="team flag/neatherland flag.png" alt="">
+            </div>
+            <div>
+                <img src="team flag/Flag-New-Zealand.webp" alt="">
+            </div>
+            <div>
+                <img src="team flag/bangladesh flag.png" alt="">
+            </div>
+            <div>
+                <img src="team flag/srilanka flag.png" alt="">
+            </div>
+            <div>
+                <img src="team flag/pakistan flag.webp" alt="">
+            </div>
+            <div>
+                <img src="team flag/england flag.jpg" alt="">
+            </div>
+            <div>
+                <img src="team flag/indian flag.jpg" alt="">
+            </div>
+            <div>
+                <img src="team flag/australian flag.webp" alt="">
+            </div>
+            <div>
+                <img src="team flag/southafrica flag.webp" alt="">
+            </div>
+            <div>
+                <img src="team flag/neatherland flag.png" alt="">
+            </div>
+            <div>
+                <img src="team flag/Flag-New-Zealand.webp" alt="">
+            </div>
+           
+        </div>
+    </section>
+    <section class="second-section">
+        
+    </section>
+</body>
+</html>

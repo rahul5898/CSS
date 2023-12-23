@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first{
+            border: 1px solid black;
+            width: 800px;
+            height: 750px;
+            position: relative;
+            box-sizing: border-box;
+        }
+        .first div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: rahul;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            /* animation-fill-mode: forwards; */
+            position: absolute;
+            box-sizing: border-box;
+        }
+        @keyframes rahul {
+            0%{
+                top: 0px;
+                left: 0px;
+
+            }
+            25%{
+                top: 0px;
+                left: 700px;
+                border-radius: 25px;
+            }
+            50%{
+                left: 700px;
+                top: 650px;
+                border-radius: 50px;
+            }
+            75%{
+                top: 650px;
+                left: 0px;
+                border: 75px;
+            }
+            100%{
+                left: 0px;
+                top: 0px;
+                border-radius: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="first">
+        <div></div>
+    </section>
+</body>
+</html>

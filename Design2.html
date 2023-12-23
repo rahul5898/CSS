@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page</title>
+    <style>
+        .main{
+            width: 100%;
+            height: 700px;
+          
+        }
+        .first-section{
+            
+            display: flex;
+        }
+        .first-section div:nth-child(1){
+            height: 100px;
+            width: 55%;
+            background-color: #343a40;
+            
+            
+        }
+        .first-section div:nth-child(2){
+            height: 100px;
+            width: 45%;
+            background-color: #1CBBB4;
+        }
+        .first-section div span{
+            font-size: 30px;
+            position: relative;
+            left: 20px;
+            bottom: 15px;
+            color:  white;
+            font: bolder;
+        }
+        .first-section div img{
+            position: relative;
+            top: 10px;
+            left: 20px;
+        }
+        .second-section{
+            width: 100%;
+            height: 600px;
+            display: flex;
+        }
+        .second-section div:nth-child(1){
+            width: 55%;
+            height: 100%;
+            background-color: #343a40;
+        }
+        .second-section div:nth-child(2){
+            width: 45%;
+            height: 100%;
+        }
+        .second-section div p:nth-child(1){
+            position: absolute;
+            top: 20%;
+            left: 10%;
+            font-size: 50px;
+            color: white;
+            font: bolder;
+        }
+        .second-section div p:nth-child(2){
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            color: white;
+            font-size: 20px;
+        }
+        .a {
+            position: absolute;
+            width: 400px;
+            height: 50px;
+            left: 10%;
+            top: 65%;
+        }
+        .a button:nth-child(1){
+            position: absolute; 
+            width: 150px;
+            height: 50px; 
+            background-color: #FF4F5A; 
+            color: white; 
+            font-size: 15px;
+            cursor: pointer;
+            
+        }
+        .a button:nth-child(2){
+            position: absolute;
+            width: 150px;
+            height: 50px;
+            left: 50%;
+            background-color: white;
+            color: black;
+            font-size: 15px;
+            cursor: pointer;
+           
+           
+        }
+        .a button:nth-child(1):hover{
+            background-color: transparent;
+            color:  #FF4F5A;
+            border: 1px solid #FF4F5A;
+        }
+        .a button:nth-child(2):hover{
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+            
+        }
+        .second-section div:nth-child(2){
+            background-color: #1CBBB4;
+            
+        }
+        .second-section div:nth-child(2) img{
+            position: absolute;
+            top: 25%;
+            height: 400px;
+            left: 60%;
+        }
+        .b{
+            width: 300px;
+            height: 45px;
+            position: absolute;
+            bottom: 2%;
+            left: 10%;
+        }
+        .b span:nth-child(1){
+            width: 40px;
+            position: absolute;
+            height: 100%;
+            left: 20%;
+            background-color: #1CBBB4;
+            border-radius: 50%;
+        }
+        .b span:nth-child(2){
+            position: absolute;
+            width: 40px;
+            height: 100%;
+            border-radius: 50%;
+            left: 35%;
+            background-color: #1CBBB4;
+        }
+        .b span img{
+            position: absolute;
+            left: 30%;
+            top: 30%;     
+        }
+        .third-section{ 
+            width: 100%;
+            height: 600px;
+            display: flex;
+           
+        }
+        .third-section div:nth-child(1){
+            background-color: white;
+            width: 45%;
+            height: 100%;
+        }
+        .third-section div:nth-child(1) img{
+            position: absolute; 
+            top: 110%;
+            left: 5%;
+        }
+        .c p:nth-child(1){
+            font-size: 30px;
+            position: absolute;
+            top: 115%;
+            
+        }
+        .c p:nth-child(2){
+            font-size: 18px;
+            position: absolute ;
+            top: 125%;
+        }
+        .d{
+            width: 400px;
+            height: 50px;
+            position: absolute;
+            top: 140%;
+        }
+        .d button:nth-child(1){
+            position: absolute;
+            top: 0;
+            
+            height: 50px;
+            width: 150px;
+            background-color: #FF4F5A;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .d button:nth-child(2){
+            position: absolute;
+            top: 0;
+            width: 150px;
+            height: 50px;
+            left: 50%;
+            background-color: #343a40;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .d button:nth-child(1):hover{
+            background-color: transparent;
+            color: #FF4F5A;
+            border: 1px solid #FF4F5A;
+        }
+        .d button:nth-child(2):hover{
+            background-color: transparent;
+            color: black;
+            border: 1px solid black;
+        }
+        .fourth-section{
+            background-color: #1CBBB4;
+            border: solid black;
+            width: 100%;
+            height: 600px;
+            position: relative;
+        }
+        .fourth-section h1{
+            color: white;
+            position: absolute;
+            left: 50%;
+            top: 10%;
+            font-size: 30px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <section class="first-section">
+        <div>
+            <img src="logo.png">
+            <b><span>Spering</span></b>
+        </div>
+        <div>
+            
+        </div>
+    </section>
+    <section class="second-section">
+        <div>
+            <b><p>You Can <br>Hire Freelancer <br>Here</p></b>
+            <p>It is a long established fact that a reader will be distracted <br> by the readable content of a page</p>
+            <div class="a">
+                <button>About Us</button>
+                <button>Get A Quote</button>   
+            </div>
+            <div class="b">
+                <span><img src="prev.png"></span>
+                <span><img src="next.png"></span>
+            </div>
+
+        </div>
+        <div>
+           <img src="slider-img.png" >
+        </div>
+    </section>
+    <section class="third-section">
+        <div>
+            <img src="experience-img.jpg">
+        </div>
+        <div class="c">
+            <b> <p>BEST EXPERINCED FREELANCER HERE</p></b>
+            <p>It is a long established fact that a reader will be distracted by the readable <br>content of a page when looking at its layout. The point of using Lorem Ipsum is <br>that it has a more-or-less normal distribution of letters, as</p>
+            <div class="d">
+                <button>Read More</button>
+                <button>Hire</button>
+            </div>
+        </div>
+    </section>
+    <section class="fourth-section">
+        <h1>Category</h1>
+    </section>
+    </div>
+</body>
+</html>
